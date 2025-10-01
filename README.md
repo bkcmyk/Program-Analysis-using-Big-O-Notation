@@ -1,3 +1,7 @@
+Got it 👍 Here’s the **final README** in the exact format you asked, with your code’s algorithm and its Big O analysis inserted after the **Comparison Table** section:
+
+---
+
 # Algorithm Analysis using Big O Notation
 
 **Aim:**
@@ -9,8 +13,8 @@ To study and understand **Algorithm Analysis** using **Big O Notation** for meas
 
 Algorithms are the backbone of computer science. To evaluate them, we need a way to measure their efficiency in terms of:
 
-1. **Time Complexity** → How the execution time of an algorithm grows as input size increases.
-2. **Space Complexity** → How much additional memory an algorithm requires as input size increases.
+* **Time Complexity** → How the execution time of an algorithm grows as input size increases.
+* **Space Complexity** → How much additional memory an algorithm requires as input size increases.
 
 Since execution times vary across hardware and compilers, we use **Big O Notation** as a **mathematical model** to analyze algorithms independent of the machine.
 
@@ -18,7 +22,7 @@ Since execution times vary across hardware and compilers, we use **Big O Notatio
 
 ## What is Big O Notation?
 
-Big O Notation describes the **upper bound** of an algorithm’s growth rate. It tells us **how the performance scales with input size (n)**, ignoring constant factors and less significant terms.
+Big O Notation describes the **upper bound** of an algorithm’s growth rate. It tells us how the performance scales with input size (n), ignoring constant factors and less significant terms.
 
 For example:
 
@@ -44,10 +48,11 @@ Where:
 
 ## Common Time Complexities
 
-### 1. **O(1) – Constant Time**
+### 1. O(1) – Constant Time
 
-* Execution time remains the same regardless of input size.
-* **Example:** Accessing an array element by index.
+Execution time remains the same regardless of input size.
+
+Example: Accessing an array element by index.
 
 ```cpp
 int getFirst(int arr[]) {
@@ -57,10 +62,11 @@ int getFirst(int arr[]) {
 
 ---
 
-### 2. **O(log n) – Logarithmic Time**
+### 2. O(log n) – Logarithmic Time
 
-* Input size reduces by half at each step.
-* **Example:** Binary Search.
+Input size reduces by half at each step.
+
+Example: Binary Search.
 
 ```cpp
 int binarySearch(int arr[], int n, int target) {
@@ -77,10 +83,11 @@ int binarySearch(int arr[], int n, int target) {
 
 ---
 
-### 3. **O(n) – Linear Time**
+### 3. O(n) – Linear Time
 
-* Runtime grows directly with input size.
-* **Example:** Linear Search.
+Runtime grows directly with input size.
+
+Example: Linear Search.
 
 ```cpp
 int linearSearch(int arr[], int n, int target) {
@@ -93,17 +100,18 @@ int linearSearch(int arr[], int n, int target) {
 
 ---
 
-### 4. **O(n log n) – Linearithmic Time**
+### 4. O(n log n) – Linearithmic Time
 
-* Common in efficient sorting algorithms.
-* **Example:** Merge Sort, Quick Sort.
+Common in efficient sorting algorithms.
+Example: Merge Sort, Quick Sort.
 
 ---
 
-### 5. **O(n²) – Quadratic Time**
+### 5. O(n²) – Quadratic Time
 
-* Common with nested loops.
-* **Example:** Bubble Sort, Insertion Sort.
+Common with nested loops.
+
+Example: Bubble Sort.
 
 ```cpp
 void bubbleSort(int arr[], int n) {
@@ -119,23 +127,23 @@ void bubbleSort(int arr[], int n) {
 
 ---
 
-### 6. **O(2ⁿ) – Exponential Time**
+### 6. O(2ⁿ) – Exponential Time
 
-* Runtime doubles with each new input size.
-* **Example:** Recursive Fibonacci without memoization.
+Runtime doubles with each new input size.
+Example: Recursive Fibonacci without memoization.
 
 ---
 
-### 7. **O(n!) – Factorial Time**
+### 7. O(n!) – Factorial Time
 
-* Extremely inefficient, grows faster than exponential.
-* **Example:** Brute force Travelling Salesman Problem.
+Extremely inefficient, grows faster than exponential.
+Example: Brute force Travelling Salesman Problem.
 
 ---
 
 ## Space Complexity
 
-Just like time, algorithms can also be analyzed for **memory usage**.
+Just like time, algorithms can also be analyzed for **memory usage**:
 
 * **O(1):** Constant memory (in-place operations).
 * **O(n):** Linear memory (storing extra arrays).
@@ -157,11 +165,58 @@ Just like time, algorithms can also be analyzed for **memory usage**.
 
 ---
 
+## Example Program Analysis
+
+
+**Algorithm of code:**
+
+1. Start the program.
+2. Define a function `printAllPairs(arr, n)`.
+3. Use two nested loops:
+
+   * Outer loop runs from `i = 0` to `n-1`.
+   * Inner loop runs from `j = 0` to `n-1`.
+   * Print the pair `(arr[i], arr[j])`.
+4. In `main()`:
+
+   * Initialize an array `{1, 2, 3}`.
+   * Call the function with `n = 3`.
+5. End program.
+
+**Time Complexity Analysis:**
+
+* Outer loop runs **n times**.
+* Inner loop runs **n times** for each outer loop iteration.
+* Total operations = **n × n = n²**.
+* Hence, **Time Complexity = O(n²)** (Quadratic).
+
+**Space Complexity Analysis:**
+
+* Uses only a few variables (`i`, `j`, and array reference).
+* No extra memory proportional to `n`.
+* Hence, **Space Complexity = O(1)** (Constant).
+
+**Sample Output:**
+
+```
+1, 1
+1, 2
+1, 3
+2, 1
+2, 2
+2, 3
+3, 1
+3, 2
+3, 3
+```
+
+---
+
 ## Why Big O Analysis Matters?
 
-* **Predicts scalability**: Helps us understand if an algorithm will work efficiently for large inputs.
-* **Compares algorithms**: Easier to choose the right approach.
-* **Optimization**: Guides us toward improving performance.
+* **Predicts scalability:** Helps us understand if an algorithm will work efficiently for large inputs.
+* **Compares algorithms:** Easier to choose the right approach.
+* **Optimization:** Guides us toward improving performance.
 
 ---
 
@@ -172,3 +227,6 @@ Just like time, algorithms can also be analyzed for **memory usage**.
 * Explored common complexities from **O(1) to O(n!)**.
 * Learned why **efficiency analysis** is crucial in algorithm design.
 
+---
+
+👉 Would you also like me to add **diagrams/flowcharts** (like how nested loops expand step by step for O(n²)) to make the README even more explanatory?
