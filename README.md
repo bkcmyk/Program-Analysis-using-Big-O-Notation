@@ -1,7 +1,3 @@
-Got it 👍 Here’s the **final README** in the exact format you asked, with your code’s algorithm and its Big O analysis inserted after the **Comparison Table** section:
-
----
-
 # Algorithm Analysis using Big O Notation
 
 **Aim:**
@@ -227,6 +223,3 @@ Just like time, algorithms can also be analyzed for **memory usage**:
 * Explored common complexities from **O(1) to O(n!)**.
 * Learned why **efficiency analysis** is crucial in algorithm design.
 
----
-
-👉 Would you also like me to add **diagrams/flowcharts** (like how nested loops expand step by step for O(n²)) to make the README even more explanatory?
